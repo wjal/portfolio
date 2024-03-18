@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: rgb(21, 245, 36);
+  width: 100%;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.App:hover{
+  cursor: default;
+}
+
+.bar{
+  background-color: white;
+  height: 60vh;
+  width: .5px;
+  opacity: .2;
+}
+
+.Header-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width:60%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name{
+  font-size: 4.5em;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  
+}
+
+.header-text{
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: white;
+  font-weight: 400;
+}
+.subtitle-text{
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: white;
+  font-weight: 500;
+}
+
+.header-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15%; 
+}
+.stack {
+  display: flex;
+  flex-direction: row;
+  font-size: .8em;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-weight: 400;
+}
+
+.right-wrapper{
+  font-size: 1em;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 66%;
+}
+.project{
+  font-size: .85em;
+  color: white;
+  width: 100%;
+  height: 33%;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  color: rgb(21, 245, 36);
+  width: 70%;
+  height: 100%;
+}
+.top-row-project{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.project-image{
+  width: 120px;
+  height: 80px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgb(186, 201, 172);
+  transition: 0.6s;
+}
+.project-image:hover{
+  width: 120.5px;
+  height: 80.3px;
+  box-shadow: 1px 1px 15px  rgb(186, 201, 172);
+  opacity: .9;
+  transition: 0.6s;
+}
+.description{
+  font-size: .5em;
+  width: 60%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: rgb(21, 245, 36);
+}
+.demo{
+  font-size: .5em;
+  width: 60%;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: rgb(21, 245, 36);
+}
+.contacts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+.contacts-icon{
+  width: 30px;
+  height: 30px;
+}
+.contact-wrapper{
+  width: 70%;
+}
+.project-wrapper {
+
+}
+.open-project{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.email-scroll-button:hover{
+  cursor: pointer;
+}
+.email-label {
+
+}
+.email-container{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color:  rgb(21, 245, 36);
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 100px;
+}
+.email-form{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: space-around;
+}
+.email-label{
+
+}
+.username-input{
+  height: 6.5%;
+  border: 0;
+  border-radius: 10px;
+}
+.email-input{
+  height: 6.5%;
+  border: 0;
+  border-radius: 10px;
+}
+.email-message{
+  height: 50%;
+  border: 0;
+  border-radius: 10px;
+}
+.email-submit{
+  border-radius: 10px;
+  background-color:  rgb(21, 245, 36);
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  border: 0;
+}
+.video-wrapper {
+  height: 30%;
+  border-radius: 10px;
+}
+.content-wrapper{
+height: 360px; width: 90%; display: flex; flex-direction: row
+}
+ 
+.blink{
+  position: relative;
+  left: 0px;
+  letter-spacing: 0;
+  animation: animate  
+                1s ease-in-out infinite; 
+}
+@keyframes animate { 
+  0% { 
+      opacity: 1; 
+  } 
+
+  50% { 
+      opacity: 0; 
+  } 
+
+  100% { 
+      opacity: 1; 
+  } 
+} 
+
+
+@media only screen and (max-width: 600px) {
+  .App{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .bar{
+    visibility: hidden;
+    height: 0vh;
+    
+  }
+  .Header-wrapper{
+    width: 90%;;
+  }
+  .contacts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  .right-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    right: 0;
+  }
+  .projects{
+    width: 90%;
+  }
+  .contact-wrapper{
+    width: 90%;
+  }
+  
+
+
+}
